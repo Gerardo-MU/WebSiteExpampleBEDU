@@ -10,10 +10,21 @@ h2,h3{
     
 }
 button{
-    background-color:rgb(255, 255, 255)
+    background-color:rgb(255, 255, 255);
+    background-color: #025157;
 }
 p{
     color: #8b8b8bcc;
     font-family: Verdana;
     font-size: 20px
+}
+.header{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+li{
+
+    display: inline-block;
+
 }
