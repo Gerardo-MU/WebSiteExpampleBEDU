@@ -1,0 +1,19 @@
+body{
+    background-color: silver;
+
+}
+h1 {
+    color: #46484c;
+    text-align: center;
+}
+h2,h3{
+    
+}
+button{
+    background-color:rgb(255, 255, 255)
+}
+p{
+    color: #8b8b8bcc;
+    font-family: Verdana;
+    font-size: 20px
+}
