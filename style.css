@@ -2,7 +2,10 @@ body {
     background-color: #ffffff;
     /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
     */
+    margin-top: 285px;
 }
+
+
  /*------------------TEXTO------------------------------------------*/ 
 h1 {
    color: #46484c;
@@ -26,8 +29,18 @@ li {
 }
 
  /*------------------ENCABEZADO------------------------------------------*/ 
+.fixed_header{
 
-.header {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+
+ .header {
   margin: 40px 20px 20px 40px ;
   font-size: 0;
   line-height: 150px;
@@ -92,7 +105,7 @@ li {
   /*----------------CONTENEDOR DE PUBLICIDAD----------------------------*/ 
 
 
- .publish {
+ .promo {
   display: flex;
 }
 
