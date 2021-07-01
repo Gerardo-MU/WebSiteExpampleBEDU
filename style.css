@@ -2,22 +2,9 @@ body {
     background-color: #ffffff;
     /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
     */
-    margin-top: 285px;
+    margin-top:150px;
 }
 
-
- /*------------------TEXTO------------------------------------------*/ 
-h1 {
-   color: #46484c;
-   text-align: center;
-}
-  
-p {
-   color: #8b8b8bcc;
-   font-family: verdana;
-   font-size: 20px;
-}
- /*----------------------------------------------------------------*/ 
 button {
   color: #fff;
   background-color: #025157;
@@ -28,50 +15,74 @@ li {
   display: inline;
 }
 
- /*------------------ENCABEZADO------------------------------------------*/ 
-.fixed_header{
+
+ /*%%%%%%%%%%%%%%%%% TEXTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+h1 {
+   color: #46484c;
+   text-align: center;
+   font-size: 60px;
+}
+  
+p {
+   color: #8b8b8bcc;
+   font-family: verdana;
+   font-size: 20px;
+}
+ /*%%%%%%%%%%%%%%%%%%%% ENCABEZADO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+
+ /*============= Encabezado fijo ==================================*/
+ .fixed_header{
 
   position: fixed;
-  background-color: #ffffff;
+  background-color: #ebebeb;
   top: 0;
   left: 0;
   right: 0;
-
 }
-
-
- .header {
-  margin: 40px 20px 20px 40px ;
+.header {
+  margin: 0 ;
   font-size: 0;
-  line-height: 150px;
+  line-height: 40px;
 }
   
-
 .header > * {
   display: inline-block;
-  font-size: 16px;
   vertical-align: middle;
   height: 100%;
-  line-height: 45px;
+  font-size: 16px;
 }
+
+/*--------- Menu de navegación --------------
 
 .navbar {
   
-  width: 70%;
+ 
+  width: 100%;
   text-align: center;
-  
   font-weight: 20;
+
+  background-color: skyblue;
+  color:white;
+  padding: 5px;
+
+  display: inline-block;
+  min-width: 200px;
+  
 }
 
 .navbar a {
   text-decoration: none;
   color: green;
+  
+  margin-left: 20px;
+  margin-right: 20px;
 }
   
 .logo {
   width: 15%;
-}
-  
+}*/
+
+/*----------------- Ingresa/Registro ----------------*/
 .actions {
   width: 15%;
   text-align: right;
@@ -100,15 +111,14 @@ li {
   background-color: #ffffff;
 }
 
- /*------------------------------------------------------------*/ 
+/*%%%%%%%%%%%%%%%%%%%%%% CONTENEDOR DE PUBLICIDAD %%%%%%%%%%%%%*/ 
 
-  /*----------------CONTENEDOR DE PUBLICIDAD----------------------------*/ 
-
-
+/*============== Video promocional ============================*/
  .promo {
   display: flex;
 }
 
+/*============== Texto Promocional ============================*/
 .publish h3 {
   font-family: "Alegreya", serif;
   font-size: 40px;
@@ -122,7 +132,7 @@ li {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
+/*=============== Formulario pr/home/gerardo/Escritorio/CursoBEDU/FASE_1/WebSiteExample/style.cssomocional ======================*/
 .publish > form {
   display: flex;
 }
@@ -131,4 +141,81 @@ li {
   color: #025157;
   margin-right: 18px;
 }
- /*------------------------------------------------------------*/ 
+/*=============================================================*/
+
+.features{
+  display: grid;
+  /*grid-template-columns: 500px 1fr; /* divide el espacio entre los elementos*/ 
+  /*grid-template-columns: 1fr 1fr;*/
+
+  /*grid-template-columns: repeat(2,330px); /*reto 1*/
+  grid-template: repeat(2,330px) / repeat(2,1fr);
+
+  
+}
+.features-art{
+  background-color: rgb(222, 181, 255);
+  margin: 10px;
+  width: 40%;
+  height: 50px;
+}
+
+/*%%%%%%%%%%%%%%%%%% Metadatos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+  /*.navbar-collapse, .actions{
+
+    display: none;
+
+  }*/
+  h1{
+    font-size: 20px;
+  }
+  body {
+    margin-top: 25px;
+  }
+  
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > input {
+    width: 100%;
+  }
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .explanation-video{
+    width: 100%;
+  }
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .features-art{
+    grid-template-columns: none;
+  }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+
+} 

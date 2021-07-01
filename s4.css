@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 400px;
+    height: 400px;
+    background-color: springgreen;
+    align-content: space-between;
+}
+.container > .item{ 
+
+/* (clase/seccion) * > .(items) => hereda las propiedades de los a la clase de los items */
+
+background-color: teal;
+width: 50%;
+height: 50px;
+}
+
+
+
